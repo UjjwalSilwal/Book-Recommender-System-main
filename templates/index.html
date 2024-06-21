@@ -13,12 +13,12 @@
   }
 </style>
 
-<body style="background-color: #000000;">
+<body style=" background: linear-gradient(to right, #1e130c, #9a8478);">
   <head>
     <style>
       /* Add styling for navigation bar */
       .navbar {
-          background-color: yellow;
+        background: linear-gradient(to right, #683320, #00223e);
           height: 60px;
           display: flex;
           align-items: center;
@@ -28,7 +28,7 @@
 
       /* Add styling for navigation links */
       .navbar a {
-          color: purple;
+          color: rgb(205, 119, 7);
           text-decoration: none;
           margin: 0 10px;
           font-size: 15px;
@@ -39,7 +39,7 @@
 
       /* Add hover effect for navigation links */
       .navbar a:hover {
-          color: black;
+          color: gold;
           text-decoration: underline;
       }
     </style>
@@ -50,14 +50,13 @@
       <a href="/recommend">Recommend</a>
     </div>
   </body>
-
     </div>
-      <h1 style="text-align: center; font-family: 'Montserrat', sans-serif; font-size: 3em; font-weight: 800; text-transform: uppercase; letter-spacing: 5px; color: white;margin-top:50px;">Book Recommender</h1>
-
+      <h1 style="text-align: center; font-family: 'Montserrat', sans-serif; font-size: 3em; font-weight: 800; text-transform: uppercase; letter-spacing: 5px; color: white;margin-top:50px;">Book Recommendation System</h1>
+    
     <div class="container">
       <div class="row">
         <div class="col-md-12" style="margin-top:50px">
-          <h1 class="text-white" style="text-align: center; font-family: 'Papyrus', Fantasy; font-size: 2.2em; font-weight: 800; text-transform: uppercase; letter-spacing: 3px; color: white;">Top 50 Books</h1>
+          <h1 class="text-white" style="text-align: center; font-family: cursive; font-size: 2.2em; font-weight: 800; text-transform: uppercase; letter-spacing: 3px; color: white;">Top 50 Books</h1>
 
         </div>
         {% for i in range(book_names| length)%}
@@ -73,8 +72,18 @@
             </div>
         {%endfor%}
 
-
-
+        <footer class="bg-body-tertiary text-center">
+          <!-- Grid container -->
+          <div class="container p-4"></div>
+          <!-- Grid container -->
+        
+          <!-- Copyright -->
+          <div class="text-center p-3 text-white" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2024 Copyright:
+            <a class="text-body" href="">BRS(Ujjwal&Suresh)</a>
+          </div>
+          <!-- Copyright -->
+        </footer>
 
 </body>
 </html>
